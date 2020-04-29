@@ -23,7 +23,7 @@ I dette eksempel kommer vi til at benytte og sammensætte både løkker og forgr
 
 ## Gennemgang
 
-`10` er linie numret i BASIC. Man skal selv skrive linie nummer som er en meget vigtig komponent i sproget. I BASIC kan man ikke bare copy, past, cut og rykke rundt på kode som i dag. Derfor blev det en konvention, at man starter på linie 10 og lave nye linier i spring af 10 efterfølgende. Dette er for at skabe og sikre plads til, at man kan tilføje kode før og efter linierne, hvis behovet skulle opstå. [^h]
+`10` er linie numret i BASIC. Man skal selv skrive linie nummer som er en meget vigtig komponent i sproget. I BASIC kan man ikke bare copy, past, cut og rykke rundt på kode som i dag. Derfor blev det en konvention, at man starter på linie 10 og lave nye linier i spring af 10 efterfølgende. Dette er for at skabe og sikre plads til, at man kan tilføje kode før og efter linierne, hvis behovet skulle opstå. 
 
 
 
@@ -31,11 +31,7 @@ I dette eksempel kommer vi til at benytte og sammensætte både løkker og forgr
 
 - ` chr$()` er en funktion som tager en *integer* som input og slå op i en database og returnere det tilsvarende symbol fra en tabel i dette tilfælde `\` for værdien 205 og `/` for værdien 206.
 
-  
-
-  
-
-- `205.5` en *float* værdi. Grunden til at der er valgt værdien 205.5 er at værdien bliver til en integer så alt efter kommaet bliver smidt væk. Så hvis rnd() returnere mellem 0 - 49 bliver resultatet 205 hvis den returnere 50 - 99 bliver det 206. Så det er en måde at lave en form for forgrening på.[^1]
+- `205.5` en *float* værdi. Grunden til at der er valgt værdien 205.5 er at værdien bliver til en integer så alt efter kommaet bliver smidt væk. Så hvis rnd() returnere mellem 0 - 49 bliver resultatet 205 hvis den returnere 50 - 99 bliver det 206. Så det er en måde at lave en form for forgrening på.
 - `+` er addition
 
 - `rnd()` er en *funktion* der tager et tal som on input og returnere en random float mellem 0 og tallet( i dette tilfælde 0 til 0.99). 
@@ -48,17 +44,13 @@ I dette eksempel kommer vi til at benytte og sammensætte både løkker og forgr
 
 
 
+*Hvis man øsnker at se alle symbolerne man kan skrive i BASIC på Commodore 64 er her et [link til Commodore 64 PETSCII codes](https://sta.c64.org/cbm64pet.html).*
+
+
+
 Eksemplet her er det som kaldes en uendelig løkke. Den starter på linie 10, kører koden og får at vide at den skal starte forfra på 'sig selv'. Den får aldrig ordre om at stoppe. Dette er sjældent ønskeligt, så derfor vil man ofte lave en konstruktion, hvor den kun kører et vist antal gange.
 
  
-
-
-
-
-
-
-
-*Hvis man øsnker at se alle symbolerne man kan skrive i BASIC på Commodore 64 er her et [link til Commodore 64 PETSCII codes](https://sta.c64.org/cbm64pet.html).*
 
 *Der er udgivet en bog om lige præcis dette stykke kode. Så hvis man ønsker at bladre lidt i den, kan bogen hentes ganske gratis på bogens hjemmeside [10Print.org](https://10print.org/10_PRINT_121114.pdf) (50 Mb).*
 
@@ -67,13 +59,14 @@ Eksemplet her er det som kaldes en uendelig løkke. Den starter på linie 10, k�
 > **Opgave: RØD**
 >
 > Implementer 10 PRINT eksemplet i p5.js
-
-[^1]: [PETSCII Code](https://sta.c64.org/cbm64pet.html)
-[^h]: sdfdsfsdfsdfdsf
-
+>
+> Ekstra: Lav tre muligheder i stedet for to: tilføj mellemrum som mulighed.
 
 
-[^PETSCII]: https://sta.c64.org/cbm64pet.html	"PETSCII Codes"
+
+
+
+
 
 
 
