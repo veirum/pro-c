@@ -27,6 +27,9 @@ Dette er et undervisningsforløb til programmering c. Forløbet vil hovedsagelig
 
 <br/>
 <br/>
+\
+\
+
 
 ![p5.js logo](https://p5js.org/assets/img/p5js.svg)
 
