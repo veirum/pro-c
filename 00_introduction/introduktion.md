@@ -23,12 +23,11 @@ Undervisningforløbet her er baseret på læreplanen for programmering - c 2017.
 
 ## Javascript og P5.js
 
-Dette er et undervisningsforløb til programmering c. Forløbet vil hovedsageligt bruge programmeringssproget JavaScript og biblioteket P5.
+Dette er et undervisningsforløb til programmering c. Forløbet vil hovedsageligt bruge programmeringssproget JavaScript og biblioteket P5. [Link til P5.js](https://p5js.org)
 
-<br/>
-<br/>
-\
-\
+
+
+
 
 
 ![p5.js logo](https://p5js.org/assets/img/p5js.svg)
@@ -37,5 +36,5 @@ Dette er et undervisningsforløb til programmering c. Forløbet vil hovedsagelig
 
 
 
-[Link til P5.js](https://p5js.org)
+
 
