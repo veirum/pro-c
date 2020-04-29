@@ -4,7 +4,7 @@
 
 > **Emner**
 >
-> Løkker, 
+> Løkker,<br/>
 > Forgreninger
 > JavaScript
 > p5.js
