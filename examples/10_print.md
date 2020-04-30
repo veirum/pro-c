@@ -23,11 +23,9 @@ I dette eksempel kommer vi til at benytte og sammensætte både løkker og forgr
 
 ​     
 
-## Gennemgang
+#### Gennemgang af 10 PRINT eksemplet
 
-`10` er linie numret i BASIC. Man skal selv skrive linie nummer som er en meget vigtig komponent i sproget. I BASIC kan man ikke bare copy, past, cut og rykke rundt på kode som i dag. Derfor blev det en konvention, at man starter på linie 10 og lave nye linier i spring af 10 efterfølgende. Dette er for at skabe og sikre plads til, at man kan tilføje kode før og efter linierne, hvis behovet skulle opstå. 
-
-​     
+- `10` er linie numret i BASIC. Man skal selv skrive linie nummer som er en meget vigtig komponent i sproget. I BASIC kan man ikke bare copy, past, cut og rykke rundt på kode som i dag. Derfor blev det en konvention, at man starter på linie 10 og lave nye linier i spring af 10 efterfølgende. Dette er for at skabe og sikre plads til, at man kan tilføje kode før og efter linierne, hvis behovet skulle opstå. 
 
 - `print` betyder at der skal outputtes tekst. 
 
@@ -46,15 +44,15 @@ I dette eksempel kommer vi til at benytte og sammensætte både løkker og forgr
 
 ​     
 
-*Hvis man øsnker at se alle symbolerne man kan skrive i BASIC på Commodore 64 er her et [link til Commodore 64 PETSCII codes](https://sta.c64.org/cbm64pet.html).*
+Eksemplet her er det som kaldes en uendelig løkke. Den starter på linie 10, kører koden og får at vide at den skal starte forfra på på linie 10. Den får aldrig ordre om at stoppe og kører der for uendeligt eller til at computeren slukkes. Dette er sjældent ønskeligt, så derfor vil man ofte lave en konstruktion, hvor den kun kører et vist antal gange.
 
-​     
+### Mere information
 
-Eksemplet her er det som kaldes en uendelig løkke. Den starter på linie 10, kører koden og får at vide at den skal starte forfra på 'sig selv'. Den får aldrig ordre om at stoppe. Dette er sjældent ønskeligt, så derfor vil man ofte lave en konstruktion, hvor den kun kører et vist antal gange.
+*For at se alle symbolerne i BASIC på Commodore 64 er her et link til [Commodore 64 PETSCII codes](https://sta.c64.org/cbm64pet.html).*
 
-​     
+​          
 
-*Der er udgivet en bog om lige præcis dette stykke kode. Så hvis man ønsker at bladre lidt i den, kan bogen hentes ganske gratis på bogens hjemmeside [10Print.org](https://10print.org/10_PRINT_121114.pdf) (50 Mb).*
+*Der er udgivet en hel bog om lige præcis dette stykke kode den findes på bogen tilhørende hjemmeside . Så hvis man ønsker at bladre lidt i den, kan hele [10 print bogen downloades her](https://10print.org/10_PRINT_121114.pdf) (50 Mb).*
 
 ​     
 
@@ -63,10 +61,6 @@ Eksemplet her er det som kaldes en uendelig løkke. Den starter på linie 10, k�
 > Implementer 10 PRINT eksemplet i p5.js
 >
 > Ekstra: Lav tre muligheder i stedet for to: tilføj mellemrum som mulighed.
-
-
-
-
 
 
 
