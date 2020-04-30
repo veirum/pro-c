@@ -1,20 +1,23 @@
 # 10 PRINT
 
+
+
 ![10 print](https://i0.wp.com/digitalsouls.com/wp/wp-content/uploads/2014/07/10print504.gif)
 
+> Jeppe Veirum Larsen, _opdateret 30/4 2020_<br/>
+> Fag: _Programmering C_<br/>
+> Tid: _5 timer_<br/>
+> 
+> ###### Emner								
+> - Løkker<br/>
+> - Forgreninger<br/>
+> - Funktioner<br/>
+> - JavaScript<br/>
+> - p5.js
+
 ​     
 
-> **Emner**
->
-> Løkker<br/>
-> Forgreninger<br/>
-> Funktioner<br/>
-> JavaScript<br/>
-> p5.js
-
-​     
-
-I dette eksempel kommer vi til at benytte og sammensætte både løkker og forgreninger. Eksemplet generere en slags kunst/møsnter og er bedere kendt som *10 print*. Eksemplet stammer fra et gammelt og meget simpelt stykke kode, der fyldte skærmen med et både simpelt, men stadig imponerende randomiseret mønster. Den originale kode var skrevet i sproget *BASIC* der blev benyttet på Commadore 64 computeren (verdens mest solgte computer). Den originale koden kan ses i eksemplet neden for.
+I dette eksempel kommer vi til at benytte og sammensætte både løkker og forgreninger. Eksemplet generere en slags kunst/møsnter og er bedere kendt som *10 PRINT*. Eksemplet stammer fra et gammelt og meget simpelt stykke kode, der fyldte skærmen med et både simpelt, men stadig imponerende randomiseret mønster. Den originale kode var skrevet i sproget *BASIC* der blev benyttet på Commadore 64 computeren (verdens mest solgte computer). Den originale koden kan ses i eksemplet neden for.
 
 ​     
 
