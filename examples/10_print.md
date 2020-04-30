@@ -62,9 +62,7 @@ Eksemplet her er det som kaldes en uendelig løkke. Den starter på linie 10, k�
 >
 > Ekstra: Lav tre muligheder i stedet for to: tilføj mellemrum som mulighed.
 
-
-
-
+​     
 
 ## Fra BASIC til JavaScript
 
