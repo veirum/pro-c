@@ -4,10 +4,8 @@
 
 ![10 print](https://i0.wp.com/digitalsouls.com/wp/wp-content/uploads/2014/07/10print504.gif)
 
-> Jeppe Veirum Larsen, _opdateret 30/4 2020_<br/>
-> Fag: _Programmering C_<br/>
-> Tid: _5 timer_<br/>
-> 
+> **Jeppe Veirum Larsen**, _opdateret 30/4 2020_<br/>***Fag:*** _Programmering C_<br/>***Sprog:***  _JavaScript_  <br/>***Tid:*** _5 timer_<br/>
+>
 > ###### Emner								
 > - Løkker<br/>
 > - Forgreninger<br/>
@@ -60,13 +58,23 @@ Eksemplet her er det som kaldes en uendelig løkke. Den starter på linie 10, k�
 
 ​     
 
+----
+
+
+
 > **Opgave: RØD**
 >
 > Implementer 10 PRINT eksemplet i p5.js
 >
-> Ekstra: Lav tre eller fire muligheder i stedet for to: tilføj mellemrum eller kryds som mulighed.
+> Ekstra opgave 1: Lav fire muligheder i stedet for to: tilføj mellemrum eller kryds som mulighed.
+>
+> Ekstra opgave 2: Gør implementeringen opløsning uafhængig. Lige megen hvilken opløsning du vælger skalerer den der til.
 
-​     
+
+
+----
+
+
 
 ## Fra BASIC til JavaScript
 
@@ -86,6 +94,16 @@ Det kan vi ikke på samme måde i JavaScript og p5.js da konsollen kun er for de
 
 Modsat eksemplet i BASIC, der har predefinerede størrelser på symboler, hvor mange der kan være per linie og lineafstand, har vi brug for selv at definere en overordnet opløsning som vores eget eksempel skal foregå i. det gør vi med `createCanvas(bredde, højde)`. Derud over skal vi inddele vores overordnede opløsninger i felter/gitter.  Det kunne f.eks. være en canvas opløsning  på 800 x 800 og et gitter på 20 felter x 20 felter. Hvis canvas f.eks. er 800 pixel  x 800 pixel, så er et gitterfelt 40 x 40 pixels stort.
 
+​    
+
+> Husk at den positive retning på y-aksen er ned.     
+> 			x																					
+> 	------>
+> 	|
+> y  v																					
+
+​    																							
+
 ```javascript
 let setup(){
 	createCanvas(800, 800);
@@ -94,27 +112,54 @@ let setup(){
 
 
 
-
-
 #### Line()
 
-Da vi ikke `line(x1, y1, x2, y2)` 
+Da vi ikke kan benytte os af prefabrikerede symboler er vi nødt til at lave vores egen. Derfor benytter vi os af p5.js som har en masse indbyggede klasser og funktioner vi med fordel kan bruge. For at tegne en streg kan vi benytte p5 funktionen `line(x1, y1, x2, y2)` . Den tager to koordinatpunkter og tegner en streg mellem dem.
 
+```javascript
+// tegner en linie i første gitterfelt (backslash)
+line(0, 0, 20, 20)
 ```
-line(0,)
+
+
+
+#### Random()
+
+For at skabe et interessant mønster har vi brug for noget tilfældighed. Her kan vi gøre brug af `random()`funktionen som er indbygget i p5. Vi har mulighed for at give den to parametre, der er fra og til.
+
+```javascript
+random(0,1); // returnere en værdi mellem 0 (inclusiv) og 1 (eksklusiv)
 ```
-
-
-
-#### Random
 
 
 
 #### If/else
 
+Vi operere med to muligheder, slash og backslash. derfor passer en _if/else_ fint til dette. Som i BASIC eksemplet skal vi bruge vores random værdi til at vurdere om vi skal vælge den ene eller den anden.
+
+```javascript
+if(condition){
+	//hvis en ting er sandt gør dette
+} else {
+	//ellers gør dette
+}
+```
 
 
-#### Løkkerne
+
+#### Løkker
+
+I det oprindelig eksempel klarede konsollen den visuelle del. Vi er dog nødt til selv at styre hvor vi tegner vores streger. Her kommer den mest 
+
+
+
+##### 1 dimension
+
+
+
+
+
+##### 2 dimensioner
 
 
 
@@ -122,7 +167,13 @@ line(0,)
 
 #### Med eller uden funktioner
 
+Det er muligt at inddrage funktioner i løsningen. Her er et eksempel på hvordan man kan lave en model af backslash i en funktion og pass parametre ind i fuktionen og derved tgne den hvor man ønsker.
 
+```javascript
+function backSlash(x1, y1, x2, y2){
+  line(0 + x1, 0 + y1, 20 + x2, 20 + y2);
+}
+```
 
 
 
@@ -150,13 +201,21 @@ line(0,)
   }
   ````
 
-- fg gfhfghfgh
 
-  
+
+-----
+
+
 
 > Opgave: Gul
 >
 > Følg dispositionen og implementer 10 PRINT eksemplet i p5.js
 >
 > *Evt. tilføj to ekstramuligheder (kryds og mellemrum)*
+
+
+
+-----
+
+
 
