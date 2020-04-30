@@ -66,6 +66,8 @@ Eksemplet her er det som kaldes en uendelig løkke. Den starter på linie 10, k�
 
 
 
+## Fra BASIC til JavaScript
+
 
 
 
