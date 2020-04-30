@@ -6,8 +6,9 @@
 
 > **Emner**
 >
-> Løkker,<br/>
+> Løkker<br/>
 > Forgreninger<br/>
+> Funktioner<br/>
 > JavaScript<br/>
 > p5.js
 
@@ -60,13 +61,99 @@ Eksemplet her er det som kaldes en uendelig løkke. Den starter på linie 10, k�
 >
 > Implementer 10 PRINT eksemplet i p5.js
 >
-> Ekstra: Lav tre muligheder i stedet for to: tilføj mellemrum som mulighed.
+> Ekstra: Lav tre eller fire muligheder i stedet for to: tilføj mellemrum eller kryds som mulighed.
+
+​     
+
+## Fra BASIC til JavaScript
+
+For at kunne rekreere eksemplet fra BASIC skal vi kigge lidt nærmere på koden og se hvordan den kan oversættes til JavaScript og p5.js. 
+
+### Det visuelle
+
+Den visulle del af det originale eksempel er gennem en form for tekst-konsol hvor symboler/tekst output printers en efter en. 
+
+![10 print in console](https://elmcip.net/sites/default/files/media/work/images/the_ppg256_article_image.png)
+
+
+
+Det kan vi ikke på samme måde i JavaScript og p5.js da konsollen kun er for debugging og ikke synlig for den almindelige bruger. Så her er man nødt til at finde finde de tilsvarende elementer i p5.js eller noget som kan erstatte det.
+
+#### Opløsning
+
+Modsat eksemplet i BASIC, der har predefinerede størrelser på symboler, hvor mange der kan være per linie og lineafstand, har vi brug for selv at definere en overordnet opløsning som vores eget eksempel skal foregå i. det gør vi med `createCanvas(bredde, højde)`. Derud over skal vi inddele vores overordnede opløsninger i felter/gitter.  Det kunne f.eks. være en canvas opløsning  på 800 x 800 og et gitter på 20 felter x 20 felter. Hvis canvas f.eks. er 800 pixel  x 800 pixel, så er et gitterfelt 40 x 40 pixels stort.
+
+```javascript
+let setup(){
+	createCanvas(800, 800);
+}
+```
 
 
 
 
 
+#### Line()
+
+Da vi ikke `line(x1, y1, x2, y2)` 
+
+```
+line(0,)
+```
 
 
 
+#### Random
+
+
+
+#### If/else
+
+
+
+#### Løkkerne
+
+
+
+
+
+#### Med eller uden funktioner
+
+
+
+
+
+### Disposition
+
+- Vælg en opløsning f.eks. `creteCanvas(bredde, højde)` og en gitter størrelse på 20 x 20.
+
+- Brug `line(x1, y1, x2, y2)` til at tegne de to skråstreger inden for grid størrelsen.
+
+- Lav en random generator `random(min, max)`
+
+- Lav en `if()` der kan vælge mellem den en eller anden type streg baseret på din random værdi.
+
+  ````js
+  if(condition){
+  	//tegn en streg her
+  }
+  ````
+
+- Brug en løkke til at tegne langs den første grid-linie.
+
+  ````javascript
+  for(fra; til; størrelse skridt){
+  	//gør noget x antal gange
+  }
+  ````
+
+- fg 
+
+  
+
+> Opgave: Gul
+>
+> Følg dispositionen og implementer 10 PRINT eksemplet i p5.js
+>
+> *Evt. tilføj to ekstramuligheder (kryds og mellemrum)*
 
