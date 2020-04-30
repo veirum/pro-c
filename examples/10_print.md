@@ -177,9 +177,9 @@ function backSlash(x1, y1, x2, y2){
 
 
 
-### Disposition
+### Disposition over fremgangsmåde
 
-- Vælg en opløsning f.eks. `creteCanvas(bredde, højde)` og en gitter størrelse på 20 x 20.
+- Vælg en opløsning`creteCanvas(bredde, højde)` og en gitter størrelse på f.eks. 20 x 20.
 
 - Brug `line(x1, y1, x2, y2)` til at tegne de to skråstreger inden for grid størrelsen.
 
@@ -193,7 +193,7 @@ function backSlash(x1, y1, x2, y2){
   }
   ````
 
-- Brug en løkke til at tegne langs den første grid-linie.
+- Brug to løkker til at tegne linierne i gitteret, hvor den ene løkke incrementerer x og den anden incrementerer y.
 
   ````javascript
   for(fra; til; størrelse skridt){
