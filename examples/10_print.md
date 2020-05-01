@@ -15,7 +15,7 @@
 
 ​     
 
-I dette eksempel kommer vi til at benytte og sammensætte både løkker og forgreninger. Eksemplet generere en slags kunst/møsnter og er bedere kendt som *10 PRINT*. Eksemplet stammer fra et gammelt og meget simpelt stykke kode, der fyldte skærmen med et både simpelt, men stadig imponerende randomiseret mønster. Den originale kode var skrevet i sproget *BASIC* der blev benyttet på Commadore 64 computeren (verdens mest solgte computer). Den originale koden kan ses i eksemplet neden for.
+I dette forløb kommer vi til at benytte og sammensætte både løkker og forgreninger. Eksemplet vi tager udgangspunkt i, generere et specielt møsnter og er bedere kendt som *10 PRINT*. Eksemplet stammer fra et gammelt og meget simpelt stykke kode, som fylder skærmen med et simpelt, men stadig visuelt imponerende randomiseret mønster. Den originale kode blev skrevet i sproget *BASIC* der blev benyttet på Commadore 64 computeren (verdens mest solgte computer). Den originale kode i BASIC kan ses neden for.
 
 ​     
 
@@ -25,7 +25,13 @@ I dette eksempel kommer vi til at benytte og sammensætte både løkker og forgr
 
 ​     
 
+Her er et [videoeksempel](https://www.youtube.com/watch?v=m9joBLOZVEo) af hvordan det ser ud, når koden eksekveres.
+
+​     
+
 #### Gennemgang af 10 PRINT eksemplet
+
+For bedre at forstå hvad der sker i 10 print eksemplet, bliver basic koden gennemgået et element ad gangen.
 
 - `10` er linie numret i BASIC. Man skal selv skrive linie nummer som er en meget vigtig komponent i sproget. I BASIC kan man ikke bare copy, past, cut og rykke rundt på kode som i dag. Derfor blev det en konvention, at man starter på linie 10 og lave nye linier i spring af 10 efterfølgende. Dette er for at skabe og sikre plads til, at man kan tilføje kode før og efter linierne, hvis behovet skulle opstå. 
 
@@ -46,7 +52,7 @@ I dette eksempel kommer vi til at benytte og sammensætte både løkker og forgr
 
 ​     
 
-Eksemplet her er det som kaldes en uendelig løkke. Den starter på linie 10, kører koden og får at vide at den skal starte forfra på på linie 10. Den får aldrig ordre om at stoppe og kører der for uendeligt eller til at computeren slukkes. Dette er sjældent ønskeligt, så derfor vil man ofte lave en konstruktion, hvor den kun kører et vist antal gange.
+Eksemplet er det som kaldes en uendelig løkke. Den starter på linie 10, kører koden og får at vide at den skal starte forfra på på linie 10. Den får aldrig ordre om at stoppe og kører der for uendeligt eller til at computeren slukkes. Dette er sjældent ønskeligt, så derfor vil man ofte lave en konstruktion, hvor den kun kører et vist antal gange.
 
 ### Mere information
 
@@ -78,7 +84,36 @@ Eksemplet her er det som kaldes en uendelig løkke. Den starter på linie 10, k�
 
 ## Fra BASIC til JavaScript
 
-For at kunne rekreere eksemplet fra BASIC skal vi kigge lidt nærmere på koden og se hvordan den kan oversættes til JavaScript og p5.js. 
+For at kunne rekreere eksemplet fra BASIC skal vi kigge lidt nærmere på koden og se hvordan den kan oversættes til JavaScript og p5.js.
+
+
+
+## P5.js - setup() og draw()
+
+P5. fungere ved at have to funktioner `function setup()` og `function draw()`. Disse to functioner tjene to forskellige formål. Når koden eksekveres køres  `function setup()` én gang og kun én gang modsat `function draw()` der kører ca. 60 gange i sekundet ind til programmet lukkes.
+
+I dette forløb vil vi kun skrive kode i setup da vi ikke ønsker at eksekvere koden til 10 print 60 gange i sekundet, men kun en enkelt gang for at fylde vores canvas.
+
+
+
+```javascript
+// globalde variabler skrives her
+let jegErEnGlobalVariabel = 10;
+let detErJegOgså = "Svend";
+
+function setup(){
+// her skriver vi vores kode til 10 print eksemplet
+  createCanvas(800, 800);
+}
+
+function draw(){
+// vi benytter ikke denne funktion i dette eksempel
+}
+```
+
+
+
+
 
 ### Det visuelle
 
@@ -97,10 +132,10 @@ Modsat eksemplet i BASIC, der har predefinerede størrelser på symboler, hvor m
 ​    
 
 > Husk at den positive retning på y-aksen er ned.     
-> 			x																					
-> 	------>
-> 	|
-> y  v																					
+> 			x<br/																		
+> 	------><br/>
+> 	|<br/>
+> y  v<br/>																					
 
 ​    																							
 
@@ -114,10 +149,12 @@ let setup(){
 
 #### Line()
 
-Da vi ikke kan benytte os af prefabrikerede symboler er vi nødt til at lave vores egen. Derfor benytter vi os af p5.js som har en masse indbyggede klasser og funktioner vi med fordel kan bruge. For at tegne en streg kan vi benytte p5 funktionen `line(x1, y1, x2, y2)` . Den tager to koordinatpunkter og tegner en streg mellem dem.
+Da vi ikke kan benytte os af prefabrikerede symboler, er vi nødt til at lave vores egen. Her kommer p5.js på banen, der har en masse indbyggede klasser og funktioner rettet mod hurtig grafisk fremstilling.
+
+For at tegne en streg benyttes p5 funktionen `line(x1, y1, x2, y2)` . Den tager to koordinatpunkter og tegner en streg mellem dem.
 
 ```javascript
-// tegner en linie i første gitterfelt (backslash)
+// tegner en linie i første gitterfelt (backslash) fra (0,0) til (20,20)
 line(0, 0, 20, 20)
 ```
 
@@ -125,7 +162,7 @@ line(0, 0, 20, 20)
 
 #### Random()
 
-For at skabe et interessant mønster har vi brug for noget tilfældighed. Her kan vi gøre brug af `random()`funktionen som er indbygget i p5. Vi har mulighed for at give den to parametre, der er fra og til.
+For at skabe et interessant mønster, som i eksemplet, har vi brug for noget tilfældighed. Her kan vi gøre brug af `random(fra, til)`funktionen som er indbygget i p5. Den tager to parametre som input, der er fra og til.
 
 ```javascript
 random(0,1); // returnere en værdi mellem 0 (inclusiv) og 1 (eksklusiv)
@@ -135,13 +172,15 @@ random(0,1); // returnere en værdi mellem 0 (inclusiv) og 1 (eksklusiv)
 
 #### If/else
 
-Vi operere med to muligheder, slash og backslash. derfor passer en _if/else_ fint til dette. Som i BASIC eksemplet skal vi bruge vores random værdi til at vurdere om vi skal vælge den ene eller den anden.
+Vi operere med to muligheder, slash og backslash. Derfor passer en _if/else_ fint til dette. 
+
+Ligesom i BASIC eksemplet skal vi bruge vores random værdi til at vælge om vi skal tegne den ene eller den anden streg.
 
 ```javascript
-if(condition){
-	//hvis en ting er sandt gør dette
+if(random > værdi){
+	//tegn den ene type
 } else {
-	//ellers gør dette
+	//tegn den anden
 }
 ```
 
@@ -149,19 +188,33 @@ if(condition){
 
 #### Løkker
 
-I det oprindelig eksempel klarede konsollen den visuelle del. Vi er dog nødt til selv at styre hvor vi tegner vores streger. Her kommer den mest 
+I det oprindelig eksempel klarede konsollen den visuelle del. Både den horisontale og vertikale. Vi er dog nødt til selv, at styre hvor vi tegner vores streger, da vi ikke har den mulighed.
 
-
+Her kommer et koncept der hedder nested loops. Det vil sige en løkke inde i en anden løkke. For at gøre det meget simplere, deler vi det op i to trin.  
 
 ##### 1 dimension
 
+Start med at løse problemet i 1 dimension, dvs. for den første linie fyldt af tilældige streger. Hvis dette først er løst, er det 'bare', at rykke en linie ned og gør det igen og igen og igen...
 
+Styrken ved en løkke er at vi kan udnytte tællevariablen i dette tilfælde `i`. I eksemplet under tæller jeg i spring af 20 og ligger det til min streg.
 
-
+```javascript
+for(let i = 0; i > breden; i = i+20){
+	line(0 + i, 0, 20 + i, 20)
+}
+```
 
 ##### 2 dimensioner
 
+I det 1 dimensionelle eksempel går det fint med en enkelt linie, men vi mangler at kunne bevæge os ned og tegne den næste på samme måde. Det er her _nested loops_ kommer ind. 
 
+```javascript
+for(let j = 0; j < højde; j = j + 20){
+	for(let i = 0; i < breden; i = i+20){
+  	line(0 + i, 0 + j, 20 + i, 20 + j)
+  }	
+}
+```
 
 
 
@@ -177,6 +230,10 @@ function backSlash(x1, y1, x2, y2){
 
 
 
+-----
+
+
+
 ### Disposition over fremgangsmåde
 
 - Vælg en opløsning`creteCanvas(bredde, højde)` og en gitter størrelse på f.eks. 20 x 20.
@@ -185,11 +242,13 @@ function backSlash(x1, y1, x2, y2){
 
 - Lav en random generator `random(min, max)`
 
-- Lav en `if()` der kan vælge mellem den en eller anden type streg baseret på din random værdi.
+- Lav en `if()` der kan vælge mellem den en eller anden type streg baseret på din random værdi. Og tegn  den valgte streg i det gørste gitter/ på første plads.
 
   ````js
-  if(condition){
-  	//tegn en streg her
+  if(random > værdi){
+  	//tegn den ene type
+  } else {
+  	//tegn den anden
   }
   ````
 
@@ -198,6 +257,9 @@ function backSlash(x1, y1, x2, y2){
   ````javascript
   for(fra; til; størrelse skridt){
   	//gør noget x antal gange
+    for(fra; til; størrelse skridt){
+  	//gør noget x antal gange
+  	}
   }
   ````
 
@@ -217,5 +279,13 @@ function backSlash(x1, y1, x2, y2){
 
 -----
 
+Når den røde eller gule opgave er løst kan man vælge at se eksemplet udført på video. Det er tit interessant at se andre skrive kode, da man løser forskellige problemer på forskellige måder. Det giver en god indsigt i hvordan man også kan løse bestemte ting, og man kan også se at andre også laver fejl.
 
+
+
+> Opgave: Grøn
+>
+> Læs hele dokumentet og følg videoen for at implementere 10 PRINT eksemplet i p5.js
+>
+> Her er en [video](https://www.youtube.com/watch?v=bEyTZ5ZZxZs) der viser hvordan man laver 10 PRINT i p5.js
 
