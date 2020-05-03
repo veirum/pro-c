@@ -1,4 +1,6 @@
-# Versionsstyring og samarbejde Github
+# Gruppearbejde i programmering
+
+Den sværeste deciplin i programmering er, at flere mennesker arbejder på den samme kode på samme tid.
 
 
 
@@ -19,3 +21,4 @@ Hvad er git?
 ![Github](https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/200px-Font_Awesome_5_brands_github.svg.png)
 
 Hvad er Github
+

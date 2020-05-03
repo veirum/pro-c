@@ -281,7 +281,7 @@ function backSlash(x1, y1, x2, y2){
 
 Når den røde eller gule opgave er løst kan man vælge at se eksemplet udført på video. Det er tit interessant at se andre skrive kode, da man løser forskellige problemer på forskellige måder. Det giver en god indsigt i hvordan man også kan løse bestemte ting, og man kan også se at andre også laver fejl.
 
-dfdf
+
 
 > Opgave: Grøn
 >
