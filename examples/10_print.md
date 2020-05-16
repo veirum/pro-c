@@ -29,7 +29,7 @@ Her er et [videoeksempel](https://www.youtube.com/watch?v=m9joBLOZVEo) af hvorda
 
 ​     
 
-![10 print example](/Users/jeppe/Desktop/10_print.gif)
+![10 print example](./gifs/10_print.gif)
 
 ​     
 
