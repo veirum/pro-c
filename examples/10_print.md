@@ -29,6 +29,10 @@ Her er et [videoeksempel](https://www.youtube.com/watch?v=m9joBLOZVEo) af hvorda
 
 ​     
 
+![10 print example](/Users/jeppe/Desktop/10_print.gif)
+
+​     
+
 #### Gennemgang af 10 PRINT eksemplet
 
 For bedre at forstå hvad der sker i 10 print eksemplet, bliver basic koden gennemgået et element ad gangen.
@@ -132,7 +136,7 @@ Modsat eksemplet i BASIC, der har predefinerede størrelser på symboler, hvor m
 ​    
 
 > Husk at den positive retning på y-aksen er ned.     
-> 			x<br/																		
+> 	x<br/>															
 > 	------><br/>
 > 	|<br/>
 > y  v<br/>																					

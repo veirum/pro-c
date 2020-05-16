@@ -22,6 +22,40 @@ _Alle eksemplerne kan følge ved at bruge [p5.js web editor](https://editor.p5js
 
 
 
+### The Upside Down
+
+Inden vi kommer i gang er der et meget vigtig koncept, i er nødt til at vide fra starten. Modsat hvad i har lært lige siden i første gang så et koordinatsystem er y-aksen modsat. Det vil sige, at de positive værdier er nedad og de negative opad. Orego (0, 0) befinder sig i øverste venstre hjørne. Dette er ikke fordi tidligere programmøre syntes det villle være skide sjovt, at lave om på hvordan alle havde lært koordinatsystemer ind til computeres indtog. Det omvendte koordinatsystem stammer fra den gamle billedteknologi i CRT/billedrør monitors, der tegner billedet fra overste venstre hjørne linie for linie. For at lette programmering og den interne match mellem hukommelse og visning af billede, valgte man at flippe y-aksen og rykke orego (0, 0) til øverste venstre hjørne. 
+
+​     
+
+![Omvendt koordinatsystem](https://p5js.org/assets/learn/coordinate-system-and-shapes/images/drawing-03.svg)
+
+
+
+
+
+## Setup og Draw
+
+Når vi åbner p5.js web editor for første gang,  bliver vi modtaget af en tom eksempel skabelon. Den er udfyldt med nogle essentielle liners kode som vi skal have med for at kunne benytte p5.js til at tegne og lave animation mm., se billedet neden under. 
+
+
+
+
+
+
+
+#### Setup
+
+I skabelonen ser vi 
+
+
+
+#### Draw
+
+
+
+
+
 ## Eksempel på et rektangel
 
 
@@ -41,21 +75,7 @@ function draw(){
 
 
 
-### The Upside Down
 
-Inden vi kommer i gang er der et meget vigtig koncept, i er nødt til at vide fra starten. Modsat hvad i har lært lige siden i første gang så et koordinatsystem er y-aksen modsat. Det vil sige, at de positive værdier er nedad og de negative opad. Orego (0, 0) befinder sig i øverste venstre hjørne. Dette er ikke fordi tidligere programmøre syntes det villle være skide sjovt, at lave om på hvordan alle havde lært koordinatsystemer ind til computeres indtog. Det omvendte koordinatsystem stammer fra den gamle billedteknologi i CRT/billedrør monitors, der tegner billedet fra overste venstre hjørne linie for linie. For at lette programmering og den interne match mellem hukommelse og visning af billede, valgte man at flippe y-aksen og rykke orego (0, 0) til øverste venstre hjørne. 
-
-​     
-
-![Omvendt koordinatsystem](https://p5js.org/assets/learn/coordinate-system-and-shapes/images/drawing-03.svg)
-
-
-
-
-
-## Canvas
-
-Når vi åbner p5.js web editor for første gang. Bliver vi modtaget af en tom eksempel skabelon. Editor
 
 
 
