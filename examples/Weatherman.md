@@ -1,0 +1,12 @@
+# Weatherman
+
+API/ Netværk
+
+
+
+
+
+
+
+
+
