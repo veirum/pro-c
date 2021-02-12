@@ -23,3 +23,5 @@ Dette er et undervisningsforløb til programmering c. Forløbet vil hovedsagelig
 ![p5.js logo](https://p5js.org/assets/img/p5js.svg)
 
 [Link til P5.js](https://p5js.org)
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=60uokf3WmTo)
