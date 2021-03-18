@@ -55,11 +55,9 @@ https://www.youtube.com/embed/4S5ckWkMnMU
 
 Klik på linket for at få en detaljeret beskrivelse af [flowchart symbolerne](https://www.smartdraw.com/flowchart/flowchart-symbols.htm).
 
-<iframe width="560" height="400" src="https://www.youtube.com/embed/I8a1hdsWQy4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-
-
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/60uokf3WmTo/0.jpg)](https://www.youtube.com/watch?v=60uokf3WmTo)
 
 
 
@@ -70,19 +68,19 @@ For at kunne skabe spillet skal vi have et sted og skrive og køre vores kode. D
 
 <br>
 
-![Screenshot 2020-11-10 at 18.24.44](../Kryds og bolle (pro c)/Screenshot 2020-11-10 at 18.24.44.png)
+![Screenshot 2020-11-10 at 18.24.44](../Kryds og bolle (pro c)/assets/Screenshot 2020-11-10 at 18.24.44.png)
 
 <br>
 
 Den mere avancerede løsning er at bruge en kode editor såsom Microsofts Visual Studio Code (VS Code). Den er en meget populær kode editor som bruges til mange forskellige sprog ikke kun JavaScript. For at køre vores kode skal vi bruge en server. Dette kan heldigvis gøre let ved at bruge modulariteten af VS Code igennem de såkaldte *extendions*. Installer LiveServer extension i VS Code og genstart programmet. Nu kan du clicke på Go Live i nederste højre hjørne og se resultatet af din kode.
 
-![vscode](../Kryds og bolle (pro c)/vscode.png)
+![vscode](../Kryds og bolle (pro c)/assets/vscode.png)
 
 <br>
 
 For at kunne debugge din kode skal du brge en konsol til at se de fejlmeddelelser som kommer i tilfælde af fejl. Højreklik på Canvasset og klik på inspiser eller lignende og 
 
-![konsol](../Kryds og bolle (pro c)/konsol.png)
+![konsol](../Kryds og bolle (pro c)/assets/konsol.png)
 
 
 
@@ -127,7 +125,7 @@ Når du er blevet fortrolig med `line()` og fundet ud af hvad de forskellige par
 >
 > Tegn linierne med ***1/3 afstand af bredden og højden mellem hver linie***, se figuren nedenunder, så du ender med en spilleplade nogenlunde som på billedet nedenunder, hvor hvert felt er lige stort.
 
-![streger](../Kryds og bolle (pro c)/streger.jpg)
+![streger](../Kryds og bolle (pro c)/assets/streger.jpg)
 
 
 
