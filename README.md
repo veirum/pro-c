@@ -1,4 +1,4 @@
-# Undervisningsforløb i Programmering C
+# undervisningsforløb i programmering C
 
 Programmering er i dag en uundværlig færdighed, som alle burde vide en lille smule om. Det er noget som forbinder os alle sammen gennem vores digitale liv, men samtidig er det de færreste, der ved noget som helst om programmering. På trods af at vi er omgivet af digitale dimser og dutter fra vi vågner til vi går i seng er det ikke noget vi undervises i. Selv om IKEA møbler i dag består mere af pap og plastik end af træ, har vi stadig sløjd i folkeskolen, hvor vi lærer at bruge en en god gammel høvl og sav, sikkert de samme som din far brugte, men intet om hvordan vi programmere vores digitale apparater. 
 
