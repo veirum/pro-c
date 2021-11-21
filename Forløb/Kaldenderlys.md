@@ -46,6 +46,8 @@ Lav en firkant
 
 Lav en trekant.
 
+Brug de indbyggede funktioner funktionerne
+
 
 
 ### Grøn
