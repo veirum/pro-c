@@ -8,8 +8,6 @@ I dette forløb tager vi det første rigtige kig på p5.js og mange af dets indb
 
 💡📖Box her om hvad er Processing. 
 
-
-
 Kernestof
 
 
@@ -21,6 +19,8 @@ Referencer
 
 
 ## Introduktion til p5.js og JavaScript
+
+<br/>
 
 ![](https://p5js.org/assets/img/p5js.svg)
 
