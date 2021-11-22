@@ -2,9 +2,11 @@
 
 ![candle](./images/candle.jpg)
 
-I dette forløb tager vi det først rigtige kig på p5.js og mange af dets indbyggede funktioner samt programmeringssproget JavaScript. Vi skal lave vores eget kalenderlys som i løbet af December vil brænde længe og længere ned hen mod juleaften. 🎅🏻
+I dette forløb tager vi det første rigtige kig på p5.js og mange af dets indbyggede funktioner. P5.js er baseret på en såkaldt bibliotek kaldet Processing. P5.js er baseret på programmeringssproget JavaScript. Vi skal lave vores eget kalenderlys som i løbet af December vil brænde længe og længere ned hen mod juleaften. 🎅🏻
 
+💡📖Box her om hvad er et bibliotek 
 
+💡📖Box her om hvad er Processing. 
 
 
 
@@ -28,7 +30,7 @@ Intro til p5 hvad det er, hvad er setup og hvad er draw.
 
 
 
-## Rød, gul, grøn
+## 🚦Rød, gul, grøn
 
 Hvis i gerne vil udfordres skal i vælge rød.
 
