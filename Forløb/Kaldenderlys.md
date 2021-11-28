@@ -172,6 +172,8 @@ function draw(){
 
 </br>
 
+------
+
 > 💡 **Baggrundsfarve**
 >
 > Funktionen `background()` kan tage ét eller tre parametre. Hvis vi giver den ét parameter mellem 0 og 255 tegner den en ensfarvet baggrund i gråtoner, f.eks. `background(127)`. 0 er sort og 255 er hvid. 
@@ -182,13 +184,18 @@ function draw(){
 >
 > [Referencen](https://p5js.org/reference/#/p5/background) til funktionen background.
 
+> --------
+
 </br>
+
+-----------
 
 > ✏️ **Vælg en baggrundsfarve**
 >
 > - Læs om funktionen `background()` i referencen.
->
-> - Vælge en baggrundsfarve der passer til jeres juledekoration.
+>- Vælge en baggrundsfarve der passer til jeres juledekoration.
+
+--------
 
 </br>
 
@@ -202,7 +209,7 @@ For at lave et simpelt lys kan vi tegne et rektangel midt på siden, der rører 
 
 </br>
 
-##### Starin
+##### Stearin
 
 ```javascript
 // FOR AT KODEN SKAL VIRKE SKAL DEN SÆTTE IND I DRAW()
@@ -220,19 +227,21 @@ function draw() {
 
 </br>
 
-![candle_1](/Users/veirum/Github/pro-c/Forløb/images/candle_1.png)
+![candle_1](./images/candle_1.png)
 
 </br>
 
 ##### Flammen
 
-For at vise at vores kalenderlys tæller ned til juleaften skal vi have tændt lyset. For at vise at lyset er tændt skal vi lave en simpel flamme. Til det skal vi bruge funktionen `triangle()`, der tager seks parametre (tre koordinat-par) et for hver hjorne i trekanten.
+For at vise at vores kalenderlys tæller ned til juleaften skal vi have tændt lyset. For at vise at lyset er tændt skal vi lave en simpel flamme. Til det skal vi bruge funktionen `triangle()`, der tager seks parametre (tre koordinat-par) et for hver hjørne i trekanten.
 
 </br>
 
 `triangle(x1, y1, x2, y2, x3, y3)`
 
+Reference til funktionen [triangle](https://p5js.org/reference/#/p5/triangle)
 
+</br>
 
 ```javascript
 function setup() {
@@ -243,7 +252,7 @@ function draw() {
   background(45);
 
   //stearin
-  rect(400, 800, 80, -500/24 * 24);
+  rect(400, 800, 80, -500);
   
   //flammen
   triangle(430, 300, 440, 250, 450, 300);
@@ -265,29 +274,55 @@ function draw() {
 
 Hvad der hurtig bliver klart er, at alle vores former har det samme udseende. Sort omrids med hvidt fyld. Men heldigvis er det muligt i p5.js at ændre på dette, igen med nogen af de indbyggede funktioner. Som i mange billedredigeringsprogrammer, Photoshop etc. hedder omridset `stroke()`og fyld hedder `fill()`. 
 
-
+-----------
 
 > ✏️  **Individuelle farver**
 >
 > - Giv stearinen og flammen hver sin farve ved at bruge funktionerne `fill()` og `stroke() ` til i får det udtryk i ønsker.
 
-
+-------
 
 #### Tekst og tal
 
+Nu skal vi have sat tal på vores lys. Heldigvis kan vi 
 
+-------
+
+> ✏️ OPGAVE put tal på dit lys
+>
+> sdf
+>
+> sdf
+
+-------
+
+</br>
+
+------
 
 > 💡 **Løkker**
 >
 > Når man programmere komme man ofte ud for at man ønsker at gentage den samme ting igen og igen med meget få ændringer. Det kan hurtigt blive ensformigt og kan resultere i fejl der kan være svære at finde.
+>
+> ```javascript
+> //En forløkke der kører 10 gange
+> 
+> for (let i = 0; i < 10; i++){
+>   
+>   //Kode herinde bliver eksekveret 10 gange
+>   
+> }
+> ```
+>
+> 
+
+-----
 
 
 
 
 
-OPGAVE put tal på dit lys
-
-Nu er selve lyset tegnet, der er en flamme, stearin samt 
+Nu er selve lyset tegnet, der er en flamme, stearin samt tal. Det næste er at vi skal have tilføjet noget automatisering for at lyset kan instille sig til at afspejle den 
 
 #### Hvad dag er det?
 
