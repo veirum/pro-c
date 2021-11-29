@@ -36,33 +36,9 @@ Ud over at holde styr på tiden skal lyset jo også pyntes. I ren Gertrud Sand s
 
 ## Krav
 
-Der er en række krav som jeres kalenderlys SKAL benytte
+Der er en række krav som jeres kalenderlys SKAL opfylde
 
-Rect()
-
-Ellipse()
-
-Line()
-
-Text()
-
-Fill()
-
-Stroke()
-
-year
-
-month
-
-day
-
-hours
-
-second
-
-
-
-I skal lave 
+I skal lave et kalenderlys der kan registrere hvad dato'en er og vise den samme dato i et format der ligner et kalenderlys. 
 
 
 
@@ -120,11 +96,7 @@ rect(50,50, 30,25);
 
 
 
-⚠️  Man kan kun bruge p5.js funktioner inde i setup eller draw(). Hvis i skriver 
-
-### Kodeblok og scope
-
-I de fleste programeeringssprog bruger man { } til at fortælle computeren hvilken kode der hører til hvilken kodeblok. 
+⚠️  Man kan kun bruge p5.js funktioner inde i setup eller draw(). Hvis i skriver uden for disse to kodeblokke vil i få en fejl.
 
 
 
@@ -145,12 +117,9 @@ Lav et kalenderlys der automatisk tæller ned med juleaften. Lyset skal følge �
 ### Tegn et lys
 
 - Lav en rektangel og giv den postition og størrelse du øsnker.
-- Tegne en trekant som flamme så den står øverst på rektanglen som en flamme.
-- 
-
-Lav en trekant.
-
-Brug de indbyggede funktioner funktionerne
+- Lav en flamme ved hjælp at `triangle()`
+- Brug funktionen `text()`til at skrive tallene på dit lys
+- Brug funktionerne `line()` `circle()` `square()` og lignende til at dekorere dit kanvas.
 
 </br>
 
@@ -281,6 +250,8 @@ Hvad der hurtig bliver klart er, at alle vores former har det samme udseende. So
 > - Giv stearinen og flammen hver sin farve ved at bruge funktionerne `fill()` og `stroke() ` til i får det udtryk i ønsker.
 
 -------
+
+</br>
 
 #### Tekst og tal
 
