@@ -203,7 +203,7 @@ Start med at løse problemet i 1 dimension, dvs. for den første linie fyldt af 
 Styrken ved en løkke er at vi kan udnytte tællevariablen i dette tilfælde `i`. I eksemplet under tæller jeg i spring af 20 og ligger det til min streg.
 
 ```javascript
-for(let i = 0; i > breden; i = i+20){
+for(let i = 0; i < breden; i = i+20){
 	line(0 + i, 0, 20 + i, 20)
 }
 ```
