@@ -38,15 +38,10 @@ Ud over at holde styr på tiden skal lyset jo også pyntes. I ren Gertrud Sand s
 
 Der er en række krav som jeres kalenderlys SKAL opfylde
 
-I skal lave et kalenderlys der kan registrere hvad dato'en er og vise den samme dato i et format der ligner et kalenderlys. 
+I skal lave et kalenderlys der kan:
 
-
-
-Kernestof
-
-
-
-For at komme i gang skal vi lave vores eget kalenderlys. Lyset skal i løbet af December brænde længe og længere ned hen mod juleaften. 🎅🏻
+- registrere hvad dato'en er
+-  og vise den samme dato i et format der ligner et kalenderlys (dvs stage med flamme som gradvis går ned). 
 
 
 
@@ -62,7 +57,9 @@ Benytte referencer til et programmeringssprog
 
 
 
-Referencer
+## Referencer
+
+
 
 
 
@@ -255,7 +252,7 @@ Hvad der hurtig bliver klart er, at alle vores former har det samme udseende. So
 
 #### Tekst og tal
 
-Nu skal vi have sat tal på vores lys. Heldigvis kan vi 
+Nu skal vi have sat tal på vores lys. Heldigvis kan vi endnu engang benytte en indbygge funktion kaldet `text()`
 
 -------
 
@@ -299,4 +296,5 @@ Nu er selve lyset tegnet, der er en flamme, stearin samt tal. Det næste er at v
 
 ----
 
-Mere følger
+Følg 
+
