@@ -66,15 +66,15 @@ Eksemplet er det som kaldes en uendelig løkke. Den starter på linie 10, kører
 
 *Der er udgivet en hel bog om lige præcis dette stykke kode den findes på bogen tilhørende hjemmeside . Så hvis man ønsker at bladre lidt i den, kan hele [10 print bogen downloades her](https://10print.org/10_PRINT_121114.pdf) (50 Mb).*
 
-​     
-
-----
 
 
+## Opgave     
 
-> **Opgave: RØD**
+
+
+> Opgave 🟥
 >
-> Implementer 10 PRINT eksemplet i p5.js
+> Implementer 10 PRINT eksemplet i p5.js uden at følge teksten videre.
 >
 > Ekstra opgave 1: Lav fire muligheder i stedet for to: tilføj mellemrum eller kryds som mulighed.
 >
@@ -86,13 +86,39 @@ Eksemplet er det som kaldes en uendelig løkke. Den starter på linie 10, kører
 
 
 
+> Opgave 🟨
+>
+> Følg dispositionen herunder og implementer 10 PRINT eksemplet i p5.js
+>
+> *Evt. tilføj to ekstramuligheder (kryds, firkant, cirkel eller mellemrum)*
+
+
+
+-----
+
+Når den røde eller gule opgave er løst kan man vælge at se eksemplet udført på video. Det er tit interessant at se andre skrive kode, da man løser forskellige problemer på forskellige måder. Det giver en god indsigt i hvordan man også kan løse bestemte ting, og man kan også se at andre også laver fejl.
+
+
+
+---
+
+
+
+> Opgave 🟩
+>
+> Læs hele dokumentet og følg videoen for at implementere 10 PRINT eksemplet i p5.js
+>
+> Her er en [video](https://www.youtube.com/watch?v=bEyTZ5ZZxZs) der viser hvordan man laver 10 PRINT i p5.js
+
+<br/>
+
 ## Fra BASIC til JavaScript
 
-For at kunne rekreere eksemplet fra BASIC skal vi kigge lidt nærmere på koden og se hvordan den kan oversættes til JavaScript og p5.js.
+For at kunne genskabe eksemplet fra BASIC skal vi kigge lidt nærmere på koden og se hvordan den kan oversættes til JavaScript og p5.js.
 
 
 
-## P5.js - setup() og draw()
+### P5.js - setup() og draw()
 
 P5. fungere ved at have to funktioner `function setup()` og `function draw()`. Disse to functioner tjene to forskellige formål. Når koden eksekveres køres  `function setup()` én gang og kun én gang modsat `function draw()` der kører ca. 60 gange i sekundet ind til programmet lukkes.
 
@@ -267,29 +293,5 @@ function backSlash(x1, y1, x2, y2){
   }
   ````
 
-
-
------
-
-
-
-> Opgave: Gul
->
-> Følg dispositionen og implementer 10 PRINT eksemplet i p5.js
->
-> *Evt. tilføj to ekstramuligheder (kryds og mellemrum)*
-
-
-
------
-
-Når den røde eller gule opgave er løst kan man vælge at se eksemplet udført på video. Det er tit interessant at se andre skrive kode, da man løser forskellige problemer på forskellige måder. Det giver en god indsigt i hvordan man også kan løse bestemte ting, og man kan også se at andre også laver fejl.
-
-
-
-> Opgave: Grøn
->
-> Læs hele dokumentet og følg videoen for at implementere 10 PRINT eksemplet i p5.js
->
-> Her er en [video](https://www.youtube.com/watch?v=bEyTZ5ZZxZs) der viser hvordan man laver 10 PRINT i p5.js
+> 
 
