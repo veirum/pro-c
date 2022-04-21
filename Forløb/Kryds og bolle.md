@@ -23,21 +23,33 @@ I dette forløb vil i lære at lave brætspillet kryds og bolle. Forløbet vil i
 
 
 ## Hvad er Kryds og bolle?
-Kryd og bolle er et simpelt brætspil som de fleste i verden kender. Spillet er for to spillere der på tur skiftes til at ligge deres brik, kryds eller bolle, på et 3 x 3 spillebræt, på et papir eller i sandet på stranden. Vinderen er den der først har fået tre på stribe.
+Kryd og bolle er et simpelt brætspil som de fleste i verden kender. Spillet er for to spillere der på tur skiftes til at ligge deres brik, kryds eller bolle, på et 3 x 3 spillebræt, på et papir eller i sandet på stranden. Vinderen er den der først har fået tre på stribe. Der findes 'to' udgaver af spillet. Det ene er at man fylder pladen ud og spillet kan ende uafgjort den anden er hvor man får tre brikker hver og spiller ind til at én spiller får tre på stripe.
 
 <img src="https://www.funkyjunkinteriors.net/wp-content/uploads/2020/01/Tic-Tac-Toe-game-tray-and-coasters-009.jpg" style="zoom:100%;" />
 
 <br>
 
+> ⚠️ I dette forløb tager vi udgangspunkt i den version hvor hele pladen fyldes op af brikker og kan resulterer i uafgjordt.
 
+<br>
 
 ## En model af Kryds og Bolle
 
-Inden man går i gang med at programmere er det en god ide at skabe sig et overblik over det man ønsker at lave. I dette tilfælde er det at lave en digital udgave af kryds og bolle. Men hvordan ved vi hvornår forskellige ting sker i kryds og bolle? For os der er udstyret med en hjerne er det sjældet et problem at overskue et så simpelt spil, men vi er nødt til at forstå det ned til mindste detalje før vi kan forklare en computer hvordan en runde kryds og bolle forløber.
+Inden der programmeres er det en god ide at skabe sig et overblik over det man ønsker at lave. Overblikket er ofte en model af logikken i programmet.
+
+> ❓ I programmering er en *model* en simplificering af det vi ønsker at lave. Det skaber overblik og giver os mulighed for at overveje og planlægge vores program uden at skrive én eneste linie kode. Der findes rigtig mange modeller, hvor det klassiske eksempel er Flowcharts, men UML klasse diagrammer er også meget brugt til mere avancerede programmer. 
+
+Inden en model kan påbegyndes skal der opstilles nogle krav. I dette tilfælde, hvor vi har at gøre med et eksisterende spil, er kravene givet på forhånd gennem spillets regler. Hvis du er i tvivl er [reglerne her](https://da.wikipedia.org/wiki/Kryds_og_bolle).
+
+Men hvordan ved vi *hvornår* forskellige ting sker i kryds og bolle? For os der er udstyret med en hjerne er det sjældet et problem at overskue et så simpelt spil, men vi er nødt til at forstå det ned til mindste detalje før vi kan forklare en computer hvordan en runde kryds og bolle forløber.
+
+<br>
 
 > 📚 **OPGAVE**
 >
-> Tag et stykke papir og skriv ned hvad det er to spillere gør fra de finder spillet til de ikke vil spille mere. Trin for trin.
+> Tag et stykke papir og skriv ned hvad det er to spillere gør, skridt for skridt, fra spillet findes frem til de ikke vil spille mere.
+
+<br>
 
 ### Flowchart
 
@@ -45,17 +57,15 @@ Til at visualisere en process eller et flow gennem et system er det meget almind
 
 https://www.youtube.com/embed/4S5ckWkMnMU
 
-
+<br>
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/LampFlowchart.svg/1200px-LampFlowchart.svg.png" alt="Flowchart" style="zoom:25%;" />
 
-
-
-
+<br>
 
 Klik på linket for at få en detaljeret beskrivelse af [flowchart symbolerne](https://www.smartdraw.com/flowchart/flowchart-symbols.htm).
 
-
+<br>
 
 
 ## Kode-editor
@@ -92,30 +102,44 @@ Det første vi har brug for er en spilleplade med 9 felter, så vi har noget at 
 
 
 
-#### Funktionen *line()*
+#### Tegn de 9 felter
 
-Den hurtigste måde at lave en 3 x 3 spilleplade på f.eks. et stykke papir er, at slå 4 streger der krydser hinandenen, se ovenfor. Til dette vil vi bruge den indbygge funktion fra p5.js `line()`, se [referencen](https://p5js.org/reference/#/p5/line) for flere detaljer.
+Den hurtigste måde at lave en 3 x 3 spilleplade på f.eks. et stykke papir er, at slå 4 streger der krydser hinandenen, se nedenfor. 
+
+For at tegne en linie bruges den indbygge funktion fra p5.js `line()`, se [referencen](https://p5js.org/reference/#/p5/line) for flere detaljer.
+
+![streger](./assets/tic-tac-toe/streger.jpg)
 
 ```javascript
 // EKSEMPEL PÅ EN LINIE TEGNET I p5.js
 
-// line bruger to koordinat punkter, line(x1, y1, x2, y2), hvor imellem den tegner en linie
-line(10, 10, 25, 25);
+// line bruger to koordinat punkter, line(x1, y1, x2, y2), hvor imellem der tegner en linie.
 
-// Tallene i parantesen kaldes parametre.
+line(10, 10, 25, 25); // Her tenes en linie melle (10,10) og (25,25)
+
+```
+
+<br>
+
+> 👀 **SE HVAD DER SKER**
+>
+> Prøv at kopier kodestykket ind i din kode-editor og se hvordan liniestykket ændre sig når du justere på de forskellige parametre (de fire tal i parentesen.
+
+<br>
+
+Når du er blevet fortrolig med `line()` og fundet ud af hvad de forskellige parametre ændre på, er det tid til at tegne de fire streger der udgør vores spilleplade.
+
+I forløbet vil vi tegne vores ting relativt til vores bredde og højde af vores canvas. 
+
+```js
+//Vi kan tegne den første lodrette streg på to måder
+
+line()
 ```
 
 
 
-> 👀 **SE HVAD DER SKER**
->
-> Prøv at kopier kodestykket ind i din kode-editor og se hvordan liniestykket ændre sig når du justere på de forskellige parametre.
-
-
-
-Når du er blevet fortrolig med `line()` og fundet ud af hvad de forskellige parametre ændre på, er det tid til at tegne resten af stregerne.
-
-
+<br>
 
 > 📚 **OPGAVE** 
 >
