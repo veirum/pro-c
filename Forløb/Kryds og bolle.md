@@ -199,6 +199,7 @@ if(mouseX > 0 && mouse X < witdh/3 && mouseY > 0 && mouseY < height/3){
 > Ud fra eksemplet ovenfor lav de resterende 8 felter og skriv det korrekte til for feltet til console.
 >
 >
+> 
 > 🤯 Hvis i er færdige tænk over hvordan man kan bruge jeres viden om 2D løkker fra 10-Print til at gøre koden mere overskuelig og lettere at vedligeholde.
 
 
