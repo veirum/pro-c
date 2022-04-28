@@ -74,19 +74,19 @@ For at kunne skabe spillet skal vi have et sted og skrive og køre vores kode. D
 
 <br>
 
-![Screenshot 2020-11-10 at 18.24.44](./assets/tic-tac-toe/Screenshot 2020-11-10 at 18.24.44.png)
+![Screenshot 2020-11-10 at 18.24.44](./assets/Screenshot 2020-11-10 at 18.24.44.png)
 
 <br>
 
 Den mere avancerede løsning er at bruge en kode editor såsom Microsofts Visual Studio Code (VS Code). Den er en meget populær kode editor som bruges til mange forskellige sprog ikke kun JavaScript. For at køre vores kode skal vi bruge en server. Dette kan heldigvis gøre let ved at bruge modulariteten af VS Code igennem de såkaldte *extendions*. Installer LiveServer extension i VS Code og genstart programmet. Nu kan du clicke på Go Live i nederste højre hjørne og se resultatet af din kode.
 
-![vscode](./assets/tic-tac-toe/vscode.png)
+![vscode](./assets/vscode.png)
 
 <br>
 
 For at kunne debugge din kode skal du brge en konsol til at se de fejlmeddelelser som kommer i tilfælde af fejl. Højreklik på Canvasset og klik på inspiser eller lignende og 
 
-![konsol](./assets/tic-tac-toe/konsol.png)
+![konsol](./assets/konsol.png)
 
 
 
@@ -98,17 +98,13 @@ Modsat hvad mange tror er en computer dum. Endda meget dum. Den ved intet selv, 
 
 Det første vi har brug for er en spilleplade med 9 felter, så vi har noget at gå ud fra. Der er flere forskellige måder hvorpå vi kan lave 9 felter, men lad os gå ud fra hvad mange nok vil syntes er den mest simple metode.
 
-[P5.js reference][1]
-
-
-
 #### Tegn de 9 felter
 
 Den hurtigste måde at lave en 3 x 3 spilleplade på f.eks. et stykke papir er, at slå 4 streger der krydser hinandenen, se nedenfor. 
 
 For at tegne en linie bruges den indbygge funktion fra p5.js `line()`, se [referencen](https://p5js.org/reference/#/p5/line) for flere detaljer.
 
-![streger](./assets/tic-tac-toe/streger.jpg)
+![streger](./assets/streger.jpg)
 
 ```javascript
 // EKSEMPEL PÅ EN LINIE TEGNET I p5.js
@@ -133,8 +129,14 @@ I forløbet vil vi tegne vores ting relativt til vores bredde og højde af vores
 
 ```js
 //Vi kan tegne den første lodrette streg på to måder
+//Vi går i eksemplet her ud fra at vores canvas er 600 x 600
 
-line()
+//line(x1, y1, x2, y2)
+
+line(200, 0, 200, 600)
+
+//Her benytter vi os af de indbyggede variabler width og height. Det gør vi så at vi kan ændre på vores opløsning hvis vi skulle få lyst til det.
+line(width/3, 0, width/3, height)
 ```
 
 
@@ -143,29 +145,70 @@ line()
 
 > 📚 **OPGAVE** 
 >
-> Tegn linierne med ***1/3 afstand af bredden og højden mellem hver linie***, se figuren nedenunder, så du ender med en spilleplade nogenlunde som på billedet nedenunder, hvor hvert felt er lige stort.
+> Tegn linierne med ***1/3 afstand af bredden og højden mellem hver linie***, se figuren nedenunder, så du ender med en spilleplade nogenlunde som på billedet, med 9 lige store felter.
 
-![streger](./assets/tic-tac-toe/streger.jpg)
+![streger](./assets/streger.jpg)
 
 
 
 ### Hvor er felterne?
 
-Nu har vi tegnet vores felter, men vi har et problem. Vi har ind til nu farve nogle pixels på en skærm i en række efter hinanden, men problemet er at computeren ikke ved at disse 4 linier skaber 9 felter, som vi er meget interesseret i, at kunne bruge til vores spil . Så næste skridt er at gøre computeren i stand til at skelne mellem  disse 9 felter.
+Nu har vi tegnet vores felter, men vi har et problem. Vi har ind til nu farvet nogle pixels på en skærmforstørrelse at lave linjer, men problemet er at computeren ikke ved at disse 4 linjer skaber 9 felter, som vi er meget interesseret i, at kunne bruge til vores spil . Så næste skridt er at gøre computeren i stand til at skelne mellem  disse 9 felter.
 
 
 
 #### Musen
 
+Vi kan som bruger primært interaggere med computeren ved hjælp af mus eller tastatur. I dette tilfælde med kryds og bolle vil vi gerne benytte musen.
+
+Det vi skal vide noget om er musens position i forhold til de tegnede felter.
+
+```javascript
+// HEJ MUS
+
+//Lad os sige hej til musen og se hvor den er. Det gør vi ved at skrive dens position til consol.
+
+console.log(mouseX, mouseY)
+```
+
+<br>
+
+#### Hvordan finder vi det første felt?
+
+Nu vi har musens position, amngler vi at finde ller en måde at beskrive felternes position. I programmering er vi nødt til at beskrive det sådan at vi kan checke logisk at vi er inde i et bestemt felt.
+
+Her kan vi bruge vores `if(some condition is true)` til at checke om musen er inde i et givent felt.
+
+Husk figuren fra før. 
+
+![streger](./assets/streger.jpg)
 
 
-Nu har vi en spilleplade lavet af 4 streger. Den er kun visuel og vi kan ikke 'bruge den til noget' endnu da computeren ikke ved hvor de forskellige felter er på pladen. Vi kan ved hjælp
 
 
 
-P5.js 
+```js
+//Øverste venstre felt
+
+if(mouseX > 0 && mouse X < witdh/3 && mouseY > 0 && mouseY < height/3){
+  //Hvis alle disse fire udsagn er sande befinder musen sig inden for feltet.
+  console.log("1");
+}
+```
+
+<br>
+
+> 📚 **OPGAVE**
+>
+> Ud fra eksemplet ovenfor lav de resterende 8 felter og skriv det korrekte til for feltet til console.
+>
+> 
+>
+> 🤯 Hvis i er færdige tænk over hvordan man kan bruge jeres viden om 2D løkker fra 10-Print til at gøre koden mere overskuelig og lettere at vedligeholde.
 
 
 
-[1]: https://p5js.org/reference/
+<br>
+
+
 
