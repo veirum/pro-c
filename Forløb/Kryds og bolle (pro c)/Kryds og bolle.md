@@ -1,5 +1,5 @@
 # Kryds og Bolle
-*af Jeppe Veirum Larsen, opdateret 5/2 2021*
+*af Jeppe Veirum Larsen, opdateret 28/4 2022*
 <br>
 
 I dette forløb vil i lære at lave brætspillet kryds og bolle. Forløbet vil introducere jer til de mest basale elementer inden for spilopbygning. Hvordan kan man placere en brik, hvordan ved computeren om der er en brik eller ej? hvis tur er det? er der nogen der har vundet? Alt jeres viden vil blive brugt til at sammensætte et helt spil hvor vi får mulighed for at sætte vores viden i spil.
@@ -94,6 +94,14 @@ For at kunne debugge din kode skal du brge en konsol til at se de fejlmeddelelse
 
 Modsat hvad mange tror er en computer dum. Endda meget dum. Den ved intet selv, den er nødt til at få det hele at vide. Det er her i som programmøre kommer ind i billedet.
 
+### En forskel mellem fysiske og digitale spil og programmer
+
+De spil vi har i den fysiske verden er ikke overraskende anderledes end de digitale. De er forskellige på mange måder, men en af de måder de adskiller sig på, som kan være forvirrende for aspirerende programmøre, er at i den fysiske verden har de fysiske objekter muligheden for at bære information, f.eks. positionen af en brik, penge i Matador, farven på brikken eller typen af brikken osv.
+
+I den digitale verden er det noget anderledes. Alt hvad vi ser på en skærm er en representation af bagvedliggende information eller data. En *Health bar* i et spil er f.eks. en grafisk representation af en variabel som indeholder en værdi som er den mængde liv spilleren har tilbage. Hvis den variabel ikke fandtes var der ikke noget at vise grafisk.
+
+Derfor er vi nødt til som programmøre at generere informationer inden vi kan vise dem grafisk på en skærm. 
+
 ### Spillepladen
 
 Det første vi har brug for er en spilleplade med 9 felter, så vi har noget at gå ud fra. Der er flere forskellige måder hvorpå vi kan lave 9 felter, men lad os gå ud fra hvad mange nok vil syntes er den mest simple metode.
@@ -135,7 +143,8 @@ I forløbet vil vi tegne vores ting relativt til vores bredde og højde af vores
 
 line(200, 0, 200, 600)
 
-//Her benytter vi os af de indbyggede variabler width og height. Det gør vi så at vi kan ændre på vores opløsning hvis vi skulle få lyst til det.
+//Her benytter vi os af de indbyggede variabler width og height. Det gør vi så at vi kan ændre på vores opløsning senere hvis vi skulle få lyst til det.
+
 line(width/3, 0, width/3, height)
 ```
 
@@ -173,6 +182,25 @@ console.log(mouseX, mouseY)
 
 <br>
 
+##### Hvordan bruger vi mouseX og mouseY
+
+Nu vi har fået adgang til musens position i **x-** og **y-aksen** så vil vi gerne kunne bestemmer noget ud fra musens position. 
+
+```js
+//indsæt i draw()
+//hvis muser er mere end halvvejs over x-aksen (bredden af kanvas), gør stregerne røde eller lad dem forblive sorte.
+
+if(mouseX > width/2){
+  stroke(255,0,0);
+}else{
+  stroke(0,0,0);
+}
+
+
+```
+
+
+
 #### Hvordan finder vi det første felt?
 
 Nu vi har musens position, amngler vi at finde ller en måde at beskrive felternes position. I programmering er vi nødt til at beskrive det sådan at vi kan checke logisk at vi er inde i et bestemt felt.
@@ -183,7 +211,7 @@ Husk figuren fra før.
 
 ![streger](./assets/streger.jpg)
 
-
+!!!!!!! HUSK AT TILFØJE AT DE SKAL GEMME DET I EN VARIABEL!!!
 
 
 
@@ -209,6 +237,26 @@ if(mouseX > 0 && mouse X < witdh/3 && mouseY > 0 && mouseY < height/3){
 
 
 <br>
+
+### Hvordan ved jeg hvad der er på felterne
+
+Her laver vi et array 1d eksempel
+
+
+
+### Hvis tur er det?
+
+
+
+### Placer en brik
+
+Hvordan placerer vi brikker med mouse pressed.
+
+
+
+### Ulubuluuu brikker hvor er i henne?
+
+Hvordan tegner vi brikerne
 
 
 
