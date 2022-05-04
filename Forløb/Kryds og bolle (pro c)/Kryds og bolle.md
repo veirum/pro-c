@@ -17,6 +17,8 @@ I dette forløb vil i lære at lave brætspillet kryds og bolle. Forløbet vil i
 
 <br>
 
+> ⛔️ Det er OK at hjælpe hinanden med forklaringer og fejlfinding etc., men at få kodestumper eller få andre til at lave koden lære i intet af. 
+
 
 ## Hvad er Kryds og bolle?
 Kryd og bolle er et simpelt brætspil som de fleste i verden kender. Spillet er for to spillere der på tur skiftes til at ligge deres brik, kryds eller bolle, på et 3 x 3 spillebræt, på et papir eller i sandet på stranden. Vinderen er den der først har fået tre på stribe. Der findes 'to' udgaver af spillet. Det ene er at man fylder pladen ud og spillet kan ende uafgjort den anden er hvor man får tre brikker hver og spiller ind til at én spiller får tre på stripe.
@@ -84,7 +86,7 @@ Den mere avancerede løsning er at bruge en kode editor såsom Microsofts Visual
 
 <br>
 
-For at kunne debugge din kode skal du brge en konsol til at se de fejlmeddelelser som kommer i tilfælde af fejl. Højreklik på Canvasset og klik på inspiser eller lignende og 
+For at kunne debugge din kode skal du bruge en konsol til at se de fejlmeddelelser som kommer i tilfælde af fejl. Højreklik på Canvasset og klik på inspicer eller lignende og 
 
 ![konsol](./assets/konsol.png)
 
@@ -108,9 +110,9 @@ Det første vi har brug for er en spilleplade med 9 felter, så vi har noget at 
 
 #### Tegn de 9 felter
 
-Den hurtigste måde at lave en 3 x 3 spilleplade på f.eks. et stykke papir er, at slå 4 streger der krydser hinandenen, se nedenfor. 
+Den hurtigste måde at lave en 3 x 3 spilleplade på f.eks. et stykke papir er, at slå 4 streger der krydser hinanden, se nedenfor. 
 
-For at tegne en linie bruges den indbygge funktion fra p5.js `line()`, se [referencen](https://p5js.org/reference/#/p5/line) for flere detaljer.
+For at tegne en linje bruges den indbygge funktion fra p5.js `line()`, se [referencen](https://p5js.org/reference/#/p5/line) for flere detaljer.
 
 ![streger](./assets/streger.jpg)
 
@@ -168,14 +170,14 @@ Nu har vi tegnet vores felter, men vi har et problem. Vi har ind til nu farvet n
 
 #### Musen
 
-Vi kan som bruger primært interaggere med computeren ved hjælp af mus eller tastatur. I dette tilfælde med kryds og bolle vil vi gerne benytte musen.
+Vi kan som bruger primært interagere med computeren ved hjælp af mus eller tastatur. I dette tilfælde med kryds og bolle vil vi gerne benytte musen.
 
 Det vi skal vide noget om er musens position i forhold til de tegnede felter.
 
 ```javascript
 // HEJ MUS
 
-//Lad os sige hej til musen og se hvor den er. Det gør vi ved at skrive dens position til consol.
+//Lad os sige hej til musen og se hvor den er. Det gør vi ved at skrive dens position til consol med console.log() ind i vores draw().
 
 console.log(mouseX, mouseY)
 ```
@@ -190,12 +192,19 @@ Nu vi har fået adgang til musens position i **x-** og **y-aksen** så vil vi ge
 //indsæt i draw()
 //hvis muser er mere end halvvejs over x-aksen (bredden af kanvas), gør stregerne røde eller lad dem forblive sorte.
 
-if(mouseX > width/2){
-  stroke(255,0,0);
-}else{
-  stroke(0,0,0);
+function setup(){
+  
 }
 
+function draw(){
+  
+	if(mouseX > width/2){
+  	stroke(255,0,0);
+	}else{
+  	stroke(0,0,0);
+	}
+  
+}
 
 ```
 
@@ -203,24 +212,43 @@ if(mouseX > width/2){
 
 #### Hvordan finder vi det første felt?
 
-Nu vi har musens position, amngler vi at finde ller en måde at beskrive felternes position. I programmering er vi nødt til at beskrive det sådan at vi kan checke logisk at vi er inde i et bestemt felt.
+Nu vi har musens position, mangler vi at finde en måde at beskrive felternes position. I programmering er vi nødt til at beskrive 'rammerne' sådan at vi kan checke at vi er inde i et bestemt felt eller område.
 
-Her kan vi bruge vores `if(some condition is true)` til at checke om musen er inde i et givent felt.
+Vi ved at vores spilleplade er delt op i 9 lige store felter 3x3 dvs. at de alle sammen er 1/3 af pladens bredde og 1/3 af pladens højde.
 
-Husk figuren fra før. 
+<br>
 
-![streger](./assets/streger.jpg)
+> ⚠️ Husk at y-aksen er positiv ned ad, modsat hvad i normalt bruger.
 
-!!!!!!! HUSK AT TILFØJE AT DE SKAL GEMME DET I EN VARIABEL!!!
+<br>
 
+I figuren herunder kan vi se at vi kan beskrive et felt, her den øverste i venstre hjørne, ved at beskrive hvor `mouseX` og `mouseY` er i forhold til opdelingen af spillepladen da vi ved at hvert felt er 1/3 x 1/3. Vi kan beskrive et rektangulært område ved at sige at musen skal være på en bestemt side hvis musen er på den rigtige side af alle fire streger må den være inde i det definerede område, se figuren neden under.
 
+![streger](./assets/find_felt.png)
+
+<br>
+
+Vi kan nu bruge vores `if()` til at checke om musen er inde i et givent felt.
 
 ```js
-//Øverste venstre felt
+//Definition af ØVERSTE VENSTRE felt
 
-if(mouseX > 0 && mouse X < witdh/3 && mouseY > 0 && mouseY < height/3){
-  //Hvis alle disse fire udsagn er sande befinder musen sig inden for feltet.
-  console.log("1");
+let felt = 0// Vi opretter en global variabel til at gemme vores position
+
+setup(){
+  
+}
+
+draw(){
+
+  //**********************
+    //Hvis alle disse fire udsagn er sande befinder musen sig inden for 		feltet.
+	if(mouseX > 0 && mouse X < witdh/3 && mouseY > 0 && mouseY < height/3){
+
+  	felt = 1; //vi ændre vores position.
+  	console.log(felt);
+	}
+  //***********************
 }
 ```
 
