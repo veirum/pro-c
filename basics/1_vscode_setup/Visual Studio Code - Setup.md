@@ -36,7 +36,7 @@ Når den nye fil er nyoprettet er det muligt at vælge programmeringssprog ved a
 
 ![new_file](./assets/new_file.png)
 
-![new_language](/Users/veirum/Github/pro-c/vscode_setup/assets/new_language.png)
+![new_language](./assets/new_language.png)
 
 <br>
 
@@ -72,7 +72,7 @@ Extension kan installeres ved at trykke på 'klods-ikonet' til venstre, se figur
 
 <br>
 
-![extensions](/Users/veirum/Github/pro-c/vscode_setup/assets/extensions.png)
+![extensions](./assets/extensions.png)
 
 <br>
 
@@ -94,25 +94,34 @@ For at undgå fejl og øge læsbarheden af kode kan denne ekstension auto-format
 Man kan vælge manuelt at køre Prettier eller man kan vælge at sætte den til at køre ved bestemte handlinger. 
 En af de mest brugte handlinger til at kører Prettier er når man gemmer sin fil. Følg linket neden under for at formatere koden når i trykker ctrl/s eller cmd/s.
 
+Ved hjælp af Prettier kan I gå fra dette rod!
+
+![prettier_clutter](/Users/veirum/Github/pro-c/basics/1_vscode_setup/assets/prettier_clutter.png)
+
+<br>
+
+Til dette!
+
+![prettier_sortet](/Users/veirum/Github/pro-c/basics/1_vscode_setup/assets/prettier_sortet.png)
+
+<br>
+
+For at sætte Prettier op til at kører når i gemmer følg linket herunder.
+
 🔗 [Prettier - Format on svave!](https://scottsauber.com/2017/06/10/prettier-format-on-save-never-worry-about-formatting-javascript-again/)
 
 #### Run Code
 Et uundværligt lille værktøj når man hurtig skal prøve et stykke kode.
 
-Installer. Herefter kan man højreklikke på koden og trykke *Run Code*.
+Installer. Herefter kan man højreklikke på koden og trykke *Run Code* øverst i menuen.
 
-BILLEDE AF MENU
+![run_code](./assets/run_code.png)
 
-
-
-#### Rainbow Brackets
-
-Giver farve til sammenhørende paranteser og klammer af forskellig art. Super extension for at få overblik.
-
-
+<br>
 
 #### Live Server
-En extension som gør det muligt at kører en lokal web-server. Dette skal primært bruges i tandem med p5.js bibloteket.
 
-BILLEDE AF HVOR MAN SKAL TRYKKE OG AT DEN ÅBNER I BROWSER
+En extension som gør det muligt at kører en lokal web-server. Dette skal primært bruges i forbindelse med p5.js bibloteket. For at køre Live Server skal i trykke på Go Live og en fane i jeres browser vil åbne og køre jeres kode hvis det understøttes.
+
+![live_server](./assets/live_server.png)
 
