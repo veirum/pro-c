@@ -28,12 +28,23 @@ Dette er nok indlysende for de fleste, men vi gennemgår lige hvordan vi oprette
 
 ### Opret fil
 
-For at oprette en fil skal i gå til *File > New File...* Det er vigtigt at i ikke vælger new text file da i så vil få en .txt fil som VS Code kun vil se som tekst. Vi vil gerne have den til at se filen som det programmeringssprog vi ønsker at bruge.
+For at oprette en fil skal i gå til *File > New File...* eller den bedste måde ved at bruge genvejen *ctrl+n / cmd+n*. 
 
-Når den nye fil er nyoprettet, og man ikke har givet den en filendelse, *(.xxx)* ved VS Code ikke hvilket programmeringssprog du ønsker at benytte. Til dette bruger den filendelsen *(.xxx)* så den ved hvordan den skal tolke hvad den ser i filen.
+Når den nye fil er nyoprettet er det muligt at vælge programmeringssprog ved at klikke på det blå *Select a language og ud fra drop down menuen vælge det ønskede sprog, se billederne nedenunder.
+
+<br>
+
+![new_file](./assets/new_file.png)
+
+![new_language](/Users/veirum/Github/pro-c/vscode_setup/assets/new_language.png)
+
+<br>
 
 ### Gem en fil
-Det vigtigste er når vi gemmer en fil er at kontrollere om filen har en endelse og hvis ikke huske at give den det rigtige endelse når vi gemmer den første gang. 
+
+Det at gemme sit kode er det vigtigste når man programmere. Der er intet være end at miste en masse arbejde. *Ctrl+s / cmd+s* gemmer og i skal bruge den flittigt. Når filen gemmes første gang bliver man bedt om at vælge hvor man vil gemme filen og hvad den skal hedde. Her er det vigtigt at man gemmer den i en folder hvor hele projektet er og man har styr på hvor den er samt at tilnavnet er sigende så man ved hvad det handler om. Så glem test, test1 test2, untiteled... etc. 
+
+Når vi gemmer en fil er det vigtigt at kontrollere om filen har den rigtige filendelse og hvis ikke så huske at give den det rigtige endelse når vi gemmer den første gang. 
 
 
 **Et par eksempler på filendelser:**
@@ -49,7 +60,7 @@ Det vigtigste er når vi gemmer en fil er at kontrollere om filen har en endelse
 
 ### Åben en folder
 
-Ofte har vi brug for nemt at danne os et overblik over en samling af filer da et program mange gange indeholder mange filer. Dette gøres ved at *File > Open Folder...* og så vælge den folder man ønsker at åbne.
+Ofte har vi brug for nemt at danne os et overblik over en samling af filer, da et program ofte indeholder mange filer. Dette gøres ved at bruge *File > Open Folder...* og så vælge den folder man ønsker at åbne. Så viser VS Code alle folderens filer ude til venstre og vi kan nemt vælge og skifte mellem filerne.
 
 
 
@@ -57,15 +68,13 @@ Ofte har vi brug for nemt at danne os et overblik over en samling af filer da et
 ## Extensions
 Extensions er essentielle for VS Code. Uden extensions er VS Code bare *"endnu en anden kode-editor"*. Ved hjælp af extension kan VS Code skræddersyes lige præcis som man vil have det. 
 
-Extension kan installeres ved at trykke på 'klods-ikonet' til venstre, se figur nedenfor.
+Extension kan installeres ved at trykke på 'klods-ikonet' til venstre, se figur nedenfor. Her kan man se sine installerede Extensions samt nogle anbefalede. De fleste extensions skal findes ved at bruge search baren i toppen af Extension menuen. Tryk på den Extension man ønsker og klik på Install i toppen af vinduet til højre.
 
+<br>
 
+![extensions](/Users/veirum/Github/pro-c/vscode_setup/assets/extensions.png)
 
-INDSAT BILLEDE AF EXTENSION
-
-
-
-VS Code anbefaler nogle extension, men hvis det man leder efter ikke er i recommended kan der søges ved hjælp af søgefeltet i toppen af Extensions. 
+<br>
 
 ### Krævede Extensions
 
@@ -88,11 +97,19 @@ En af de mest brugte handlinger til at kører Prettier er når man gemmer sin fi
 🔗 [Prettier - Format on svave!](https://scottsauber.com/2017/06/10/prettier-format-on-save-never-worry-about-formatting-javascript-again/)
 
 #### Run Code
-Et uundværligt værktøj når man hurtig skal prøve et stykke kode.
+Et uundværligt lille værktøj når man hurtig skal prøve et stykke kode.
 
-Installer. Herefter kan der højreklikket på koden og trykkes *Run Code*.
+Installer. Herefter kan man højreklikke på koden og trykke *Run Code*.
 
 BILLEDE AF MENU
+
+
+
+#### Rainbow Brackets
+
+Giver farve til sammenhørende paranteser og klammer af forskellig art. Super extension for at få overblik.
+
+
 
 #### Live Server
 En extension som gør det muligt at kører en lokal web-server. Dette skal primært bruges i tandem med p5.js bibloteket.
