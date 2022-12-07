@@ -1,6 +1,6 @@
 # Variabler
 
-*af Jeppe Veirum Larsen, senest opdateret Okt. 20201*
+*af Jeppe Veirum Larsen, senest opdateret Dec. 2022*
 
 **Fag:** Programmering c&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;**Sprog:** JavaScript
 
@@ -161,7 +161,7 @@ Når vi opretter en variabel operere vi med forskellige såkaldte data typer.
 
 ## Implicitte og Eksplicitte Variabler
 
-Der findes to overordnede typer af variabler kaldet implicitte og eksplicitte variabler. 
+Der findes to overordnede typer af variabler kaldet implicitte og eksplicitte variabler.  Det programmeringssprog i skriver i har enten den ene eller anden type.
 
 ### Data typer
 
@@ -191,23 +191,21 @@ For at gå lidt væk fra de teksttunge eksempler så forestil jer at en variabel
 > :pencil2: **Øvelse 1**
 >
 > Prøv at oprette din egen variabel. Du kan kalde den hvad du vil og du vælger selv om den skal indeholde tal eller bogstaver.
+>
+> 📌 De mest brugte datatyper er int (heltal), float (kommatal, String (tekst), bool (sandt/falsk) 
 
-
-
-> :warning: De mest brugte datatyper er int (heltal), float (kommatal, String (tekst), bool (sandt/falsk) 
-
-
+<br>
 
 :warning: Implicitte variabler, som f.eks. dem i JavaScript og Python, bestemmer selv hvilken datatype de bliver ud fra hvilke værdier de gemmer på. Dette går for det meste godt, men nogle gange ønsker vi at  
 
-
+<br>
 
 >:pencil2: **Øvelse 1**
 >
 >
 >Prøv at oprette din egen variabel. Du kan kalde den hvad du vil og du vælger selv om den skal indeholde tal eller bogstaver.
 
-
+<br>
 
 > :mag: Hvis du er i tvivl om, hvilken *datatype* din variabel er.
 >
@@ -218,7 +216,7 @@ For at gå lidt væk fra de teksttunge eksempler så forestil jer at en variabel
 >
 > 
 
-
+<br>
 
 > :warning: I vil støde på eksempler, hvor ordet **var** bruges istedet for **let**. 
 >
@@ -226,11 +224,11 @@ For at gå lidt væk fra de teksttunge eksempler så forestil jer at en variabel
 > var enVariabel = 2;
 > ```
 >
-> Til lige brugte man ***var*** til at oprette variabler i javascript, men i nyere udgaver af sproget er man gået over til at bruge ***let*** i stedet. Ordet ***var*** blev dog brugt i mange år, så mangle ældre eksempler bruger ***var***.
+> Tidligere brugte man ***var*** til at oprette variabler i javascript, men i nyere udgaver af sproget er man gået over til at bruge ***let*** i stedet. Ordet ***var*** blev dog brugt i mange år, så mangle ældre eksempler bruger ***var***.
 
+<br>
 
-
-> :warning: Husk at et variabel navn skal være unikt og sigende for hvad den indeholder.  
+> :warning: Husk at et variabelnavn skal være unikt og sigende for hvad den indeholder.  
 > Du skal benytte [a-z] [A - Z] [0 - 9] _ eller $. Første position kan ikke være [0-9] når du navngiver. Ved at følge dette undgår du fejl hvis du ønsker at bruge din kode andre steder eller i andre sprog.
 >
 > 
@@ -241,7 +239,7 @@ For at gå lidt væk fra de teksttunge eksempler så forestil jer at en variabel
 > //Begynder med et tal
 > let 1lilleMand = "Jørgen";
 > 
-> //Begynder med et beskytte ord
+> //Begynder med et beskyttet/reserveret ord
 > let undefined = 98;
 > ```
 >

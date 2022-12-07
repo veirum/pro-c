@@ -1,6 +1,6 @@
 # Visual Studio Code
 
-*Af Jeppe Veirum Larsen, opdateret 18/11 2022*
+*Af Jeppe Veirum Larsen, opdateret Dec. 2022*
 
 ![logo](./assets/logo.png)
 
