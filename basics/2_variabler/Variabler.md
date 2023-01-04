@@ -10,7 +10,7 @@
 
 <br/>
 
-Variabler er en af grundpillerne i programmering. Variabler bruges i alle programmer og bruges til at holde på værdier såsom tal, tekst, objekter, boolske værdier og meget mere. I dette afsnit vil gennemgå hvad en variabel er, hvilke typer der findes og hvordan de bruges.
+Variabler er en af grundpillerne i programmering. Variabler bruges i alle programmer og bruges til at holde på værdier såsom tal, tekst, boolske værdier og meget mere. Dette dokument gennemgår hvad en variabel er, hvilke typer der findes og hvordan de bruges.
 
 <br/>
 
@@ -33,8 +33,8 @@ Variabler er en af grundpillerne i programmering. Variabler bruges i alle progra
 ## Hvad er en variabel?
 
 Udtrykket *variabel* bruges i mange forskellige sammenhænge og mange kender det måske fra matematik. I matematik bruges en variabel f.eks. ***a*** eller ***x*** til at beskrive en ukendt mængde der kan ændre sig, eller variere, derfra navnet ***variabel***. I datalogi repræsenterer en variabel allokering af hukommelse til opbevaring af en eller anden form for data. Men hvordan ser en variabel ud? Lad os tage et lille eksempel. I eksemplet herunder opretter vi en variabel med navnet ***a*** og vi giver den værdien ***2***.
-
-
+<br/>
+<br/>
 
 **Eksempler på oprettlse af varialer i forskellige programmeringssprog**
 
@@ -71,7 +71,9 @@ a = 2
 
 <br/>
 
-Eksemplet ovenfor kan nok se lidt fremmed ud for folk, der aldrig før har stiftet bekendskab med programmering. Den første vi skriver er ordet ***let***. Dette er det første der skal skrives når man ønsker at oprette en *ny* variabel. Herefter skal variablen have et navn, som i dette tilfælde er ***a***. Dernæst kommer ligmed tegnet ***=*** , der i programmering bruges til at tildele noget en værdi, som her i eksemplet bliver variablen med navn ***a*** tildelt værdien ***2***. Til sidst afsluttes oprettelsen med semicolon ***;*** der giver tegn til computeren, at vores instruktion slutter her. 
+Eksemplet ovenfor kan nok se lidt fremmed ud for folk, der aldrig før har stiftet bekendskab med programmering. Lad os se på JavaScript eksemplet.
+
+Det første vi skriver er ordet ***let***. Dette er det første der skal skrives når man ønsker at oprette en *ny* variabel. Herefter skal variablen have et navn, som i dette tilfælde er ***a***. Dernæst kommer ligmed tegnet ***=*** , der i programmering bruges til at tildele noget en værdi, som her i eksemplet bliver variablen med navn ***a*** tildelt værdien ***2***. Til sidst afsluttes oprettelsen med semicolon ***;*** der giver tegn til computeren, at vores instruktion slutter her. 
 
 
 
@@ -90,7 +92,14 @@ let a = 2;
 
 ## Datatyper
 
-Variable kan holde på forskellige typer af data. Man kan se variabler som en kasse eller en spand med et navn på. Man kan putte noget ned i spanden eller kassen for at opbevare det, man kan kigge ned i kassen og se om alle tingene stadig er der eller tage det op og putte noget andet i. De ting vi kan putte ned i kassen hedder ***datatyper***. Der findes mange forskellige datatyper, hvor de mest brugte er ***int***, ***float***, ***bool*** og ***String***. I eksemplet herunder kan vi se hvordan vi opretter en variabel der indeholde hver af de mest brugte typer.
+Variable kan holde på forskellige typer af data. Man kan se variabler som en kasse eller en spand med et navn på. Man kan putte noget ned i spanden eller kassen for at opbevare det, man kan kigge ned i kassen og se om alle tingene stadig er der eller tage det op og putte noget andet i. De ting vi kan putte ned i kassen hedder ***datatyper***. Der findes mange forskellige datatyper, hvor de mest brugte er ***int***, ***float***, ***bool*** og ***String***. 
+
+### Implicitte og eksplicitte variabler
+Der findes to overordnede typer af variabler, implicitte og eksplicitte. Det er normalt ikke noget man skal forholde sig til, men det har betydning for hvordan man opretter en variabel.
+
+#### Implicitte variabler
+I eksemplet herunder kan vi se hvordan vi opretter en implicit variabel der indeholder de mest brugte typer. Eksemplet er Javascript.
+
 
 
 
@@ -159,7 +168,7 @@ Når vi opretter en variabel operere vi med forskellige såkaldte data typer.
 
 
 
-## Implicitte og Eksplicitte Variabler
+#### Eksplicitte Variabler
 
 Der findes to overordnede typer af variabler kaldet implicitte og eksplicitte variabler.  Det programmeringssprog i skriver i har enten den ene eller anden type.
 
